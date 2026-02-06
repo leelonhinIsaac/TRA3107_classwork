@@ -8,68 +8,29 @@
 
 
     <meta charset="UTF-8">
-    <title>My 1st mini Test 第一個小測試網站</title>
+    <title>Plz save me!!!</title>
 
 
 
-    <h3>驗腦時間</h3>
-    Q1. 京都 = ?<br>
-    <input type="radio" name="q1" id="ans1">Tokyo
-    <input type="radio" name="q1" id="ans2">Kyoto
-    <input type="radio" name="q1" id="ans3">念慈菴
-    <button onclick="question1()">提交</button>
-    <p id="results1">OMG!! ENG4000等緊你~ <img src="https://www.stickershop.net/uploads/item_image/bigImageFit-jpg/72ad71f0bffd8f938a55124204ae0cbb658441a6.jpg" width="20%"></p>
-    Q2. 京都點講 ?<br>
-    <input type="radio" name="q2" id="ans4">Tokyo
-    <input type="radio" name="q2" id="ans5">Kyoto
-    <input type="radio" name="q2" id="ans6">念慈菴
-    <button onclick="question2()">提交</button>
-    <p id="results2">好無幽默感~ <img src="https://www.stickershop.net/uploads/item_image/bigImageFit-jpg/72ad71f0bffd8f938a55124204ae0cbb658441a6.jpg" width="20%"></p>
-     Q. 東京 = ?<br>
-    <input type="radio" name="q3" id="ans7">Tokyo
-    <input type="radio" name="q3" id="ans8">Kyoto
-    <input type="radio" name="q3" id="ans9">念慈菴
-    <button onclick="question3()">提交</button>
-    <p id="results3">Correct! Ielts攞完9 翻鄉下嘍</p>
+    <center>
+        <h1>🙏🏻Plz save me!!!🙏🏻</h1>
+        <img src="https://whatsticker.online/stickers_asset/ws-pack-755070k1YYOh4/c3180261b5538.webp" width="30%"><br>
+        <button onclick="buddha()">Random</button>
+<p id="goodluck"></p>
+    </center>
 
 
-
-                <script>function question1(){
-    var ans1 = document.getElementById("ans1");
-    var ans2 = document.getElementById("ans2");
-    var ans3 = document.getElementById("ans3");
-
-if(ans2.checked){
-    document.getElementById("results1").
-    innerText = "Correct! Ielts攞9";
-}else if(ans1.checked || ans3.checked){
-    document.getElementById("results1").innerHTML = "OMG!! ENG4000等緊你~ <img src='https://www.stickershop.net/uploads/item_image/bigImageFit-jpg/72ad71f0bffd8f938a55124204ae0cbb658441a6.jpg' width='20%'>";
+                <script>var verses = [
+    "南無阿彌陀佛",
+    "施主，你肯定能成佛！",
+    "這輩子過得不錯",
+    "多多念佛，累積功德"
+]
+function buddha(){
+var random = parseInt(Math.random() * 4);
+document.getElementById("goodluck").innerText = verses[random];
 }
-}
-function question2(){
-    var ans4 = document.getElementById("ans4");
-    var ans5 = document.getElementById("ans5");
-    var ans6 = document.getElementById("ans6");
-
-if(ans6.checked){
-    document.getElementById("results2").
-    innerText = "真香港人";
-}else if(ans4.checked || ans5.checked){
-    document.getElementById("results2").innerHTML = "好無幽默感~ <img src='https://www.stickershop.net/uploads/item_image/bigImageFit-jpg/72ad71f0bffd8f938a55124204ae0cbb658441a6.jpg' width='20%'>";
-}
-}
-function question3(){
-    var ans7 = document.getElementById("ans7");
-    var ans8 = document.getElementById("ans8");
-    var ans9 = document.getElementById("ans9");
-
-if(ans7.checked){
-    document.getElementById("results3").
-    innerText = "Correct! Ielts攞完9 翻鄉下嘍";
-}else if(ans8.checked || ans9.checked){
-    document.getElementById("results3").innerHTML = "OMG!! ENG4000等緊你~ <img src='https://www.stickershop.net/uploads/item_image/bigImageFit-jpg/72ad71f0bffd8f938a55124204ae0cbb658441a6.jpg' width='20%'>";
-}
-}</script>
+</script>
             
         
     </body>
